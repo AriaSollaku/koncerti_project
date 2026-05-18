@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koncert Popullor</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>🎤 Koncert Popullor 2026 </h1>
+    <p>Mbrëmja më e madhe me muzikë tradicionale shqiptare 🇦🇱</p>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">Rreth Eventit</a>
+  <a href="#program">Programi</a>
+  <a href="#gallery">Galeria</a>
+   <a href="#faq">FAQ</a>
+  <a href="#contact">Kontakti</a>
+</nav>
+
+<section id="about" class="container">
+  <div class="about">
+    <h2>Rreth Eventit</h2>
+
+    <p>
+      Koncerti i shkollës sonë, ka si qëllim të bëj bashkë mësues, nxënës dhe prindër duke shijuar një performancë të bukur me këngë popullore shqiptare.
+    </p>
+
+    <br>
+    <p><strong>Orari: </strong> 19:30</p>
+    <p><strong>Vendi: </strong> Gjimnazi "Qemal Stafa"</p>
+    <p><strong>Salla: </strong> Salla e Aktiviteteve</p>
+
+  </div>
+</section>
+
+<section id="program" class="container">
+  <h2>Programi i Eventit</h2>
+
+  <div class="programi">
+
+      <div class="card">
+      <div style="padding:40px 20px;">
+        <h3>18:30</h3>
+        <p>Hapja e Eventit 🎤</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div style="padding:40px 20px;">
+        <h3>19:30</h3>
+        <p>Fillimi i Koncertit 💃</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div style="padding:40px 20px;">
+        <h3>22:15</h3>
+        <p>Finalja Festive 🎉</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="gallery" class="container">
+  <h2>Galeria</h2>
+
+  <div class="gallery">
+
+    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80">
+
+    <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=800&q=80">
+
+    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80">
+
+  </div>
+</section>
+
+<section class="container tickets">
+  <h2>Rezervo Biletën 🎟️</h2>
+
+  <p>Rezervo vendin tënd për koncertin më të madh popullor!</p>
+
+  <button onclick="showPopup()">
+    Bli Biletë
+  </button>
+</section>
+
+<div class="popup" id="popup">
+
+  <div class="popup-content">
+
+    <h2>Rezervim Bilete 🎫</h2>
+
+    <form id="ticketForm">
+
+      <input 
+        type="text" 
+        placeholder="Shkruaj emrin"
+        required
+      >
+
+      <input 
+        type="email" 
+        placeholder="Shkruaj email-in"
+        required
+      >
+
+      <button type="submit">
+        Konfirmo Blerjen
+      </button>
+
+    </form>
+
+    <br>
+
+    <button onclick="closePopup()">
+      Mbyll
+    </button>
+
+  </div>
+
+</div>
+
+<div class="popup" id="popup">
+
+  <div class="popup-content">
+
+    <h2>Faleminderit 🎉</h2>
+
+    <p>Rezervimi juaj u pranua me sukses!</p>
+
+    <button onclick="closePopup()">
+      Mbyll
+    </button>
+
+  </div>
+
+</div>
+
+<section id="faq" class="container">
+
+  <h2>Pyetje të Shpeshta ❓</h2>
+
+  <div class="about">
+
+    <h3>🎟️ Si mund të rezervoj biletë?</h3>
+    <p>
+      Klikoni te butoni "Bli Biletë" dhe plotësoni emrin dhe email-in.
+    </p>
+
+    <br><hr><br>
+
+    <h3>👨‍👩‍👧 A lejohen fëmijët?</h3>
+    <p>
+      Po, koncerti është i hapur për të gjitha moshat.
+    </p>
+
+    <br><hr><br>
+
+    <h3>🚗 A ka parking?</h3>
+    <p>
+      Po, pranë gjimnazit ka parking falas për vizitorët.
+    </p>
+
+    <br><hr><br>
+
+    <h3>⏰ Kur fillon koncerti?</h3>
+    <p>
+      Koncerti fillon në orën 19:30.
+    </p>
+
+  </div>
+
+</section>
+
+<footer id="contact">
+
+  <p>📍 Gjimnazi Qemal Stafa Tiranë, Shqipëri</p>
+
+  <p>📞 +355 69 123 4567</p>
+
+  <p>✉️ koncertipopullor@gmail.com</p>
+
+  <br>
+
+  <p>© 2026 Koncert Popullor</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
