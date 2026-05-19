@@ -1,46 +1,43 @@
-<script>
+document.addEventListener("DOMContentLoaded", () => {
 
   const popup = document.getElementById("popup");
 
-  function showPopup(){
+  // Hap popup
+  window.showPopup = function () {
     popup.style.display = "flex";
   }
 
-  function closePopup(){
+  // Mbyll popup
+  window.closePopup = function () {
     popup.style.display = "none";
   }
 
-  // Mbyll popup kur klikon jashtë
+  // Mbyll kur klikon jashtë
   popup.addEventListener("click", function(e){
+
     if(e.target === popup){
       closePopup();
     }
-  });
-
-  // Forma e kontaktit
-  document.getElementById("contactForm")
-  .addEventListener("submit", function(e){
-
-    e.preventDefault();
-
-    alert("Mesazhi u dërgua me sukses!");
-
-    this.reset();
 
   });
 
   // Forma e biletës
-  document.getElementById("ticketForm")
-  .addEventListener("submit", function(e){
+  const ticketForm = document.getElementById("ticketForm");
 
-    e.preventDefault();
+  if(ticketForm){
 
-    alert("Bileta u rezervua me sukses 🎉");
+    ticketForm.addEventListener("submit", function(e){
 
-    closePopup();
+      e.preventDefault();
 
-    this.reset();
+      alert("Bileta u rezervua me sukses 🎉");
 
-  });
+      closePopup();
 
-</script>
+      this.reset();
+
+    });
+
+  }
+
+});
