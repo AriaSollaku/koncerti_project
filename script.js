@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       e.preventDefault();
 
-      alert("Bileta u rezervua me sukses 🎉");
+      alert("Rezervimi juaj u krye me sukses 🎉");
 
       closePopup();
 
