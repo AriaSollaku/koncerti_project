@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
-  // Forma e biletës
+  // Forma per rezervimin e tavolines
   const ticketForm = document.getElementById("ticketForm");
 
   if(ticketForm){
